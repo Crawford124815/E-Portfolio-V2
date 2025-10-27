@@ -9,7 +9,7 @@ function contact(event) {
       'service_57w3hqt',
       'template_qhpqmv3',
       event.target,
-      'user_OgzFtBaCt61Gn79qf'
+      'user_stmOaXtqd6EQavKg3'
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
@@ -21,4 +21,14 @@ function contact(event) {
         "The email service is temporarily unavailable. Please contact me directly at ccsoftwaredevelopment@gmail.com"
       );
     });
+}
+
+let isModalOpen = false;
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false
+        return document.body.classList.remove("modal--open")
+    }
+    isModalOpen = true;
+    document.body.classList += " modal--open"
 }
