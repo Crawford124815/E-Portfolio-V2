@@ -16,7 +16,7 @@
 <script type="text/javascript">
    (function(){
       emailjs.init({
-        publicKey: "user_stmOaXtqd6EQavKg3f",
+        publicKey: "stmOaXtqd6EQavKg3f",
       });
    })();
 </script>
@@ -30,8 +30,8 @@
         <ul class="nav__link--list" id="nav__link--list">
           <li class="nav__link">
             <a
-              href="#"
-              class="nav__link--anchor 
+              href="#" class="
+              nav__link--anchor 
               link__hover-effect 
               link__hover-effect--black
               click"
@@ -40,47 +40,46 @@
           </li>
           <li class="nav__link">
             <a
-              href="#projects"
-              class="nav__link--anchor 
+              href="#projects" class="
+              nav__link--anchor 
               link__hover-effect 
               link__hover-effect--black
               click"
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
-              href="#footer"
-              class="nav__link--anchor 
+              href="#" class="
+              nav__link--anchor 
               link__hover-effect 
               link__hover-effect--black
               click"
               >Contact</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
-              href="#"
-              id="theme-toggle"
-              class="nav__link--anchor"
-            >
-              <button id="theme-toggle" class="icon-1 click"
-                ><i class="fa-solid fa-circle-half-stroke"></i>
-          </button>
+              href="#" class="
+              nav__link--anchor
+              link__hover-effect"                       
+            ><i class="fas fa-adjust"></i>      
             </a>
           </li>
         </ul>
       </nav>
       <header class="header">
         <div class="header__content">
-          <h1 class="title">Hey</h1>
-          <h1 class="title green"><span class="green">I'm Chance</span>.</h1>
+          <h1 class="title">Hey
+            <br>
+          <span class="green">I'm Chance.</span>
+        </h1>
           <p class="header__paragraph">
             I'm a <span class="green">Frontend Software Engineer </span>with a
             strong passion for learning and building responsive web application
             with great user experiences.
             <br />
-            Here's a bit more <span class="green">about me.</span>
+            Here's a bit more <span class="green click" onclick="toggleModal()">about me.</span>
           </p>
           <div class="social__list">
             <a
@@ -88,7 +87,7 @@
               target="_blank"
               class="social__link click"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-linkedin-in"></i>                
             </a>
             <a
               href="https://github.com/Crawford124815"
@@ -138,6 +137,7 @@
             </div>
         </div>
         <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             <h3 class="modal__title modal__title--contact">
                 Let's have a chat!
             </h3>
@@ -157,9 +157,11 @@
                     <label class="form__item--label">Message</label>
                     <textarea type="text" name="message" class="input" ></textarea> 
                 </div>
+                <div class="btn__wrapper">
                 <button id="contact__submit" class="form__submit">
                     Send it my way
                 </button>
+            </div>
             </form>
             <div class="modal__overlay modal__overlay--loading">
                 <i class="fas fa-spinner"></i>
@@ -168,7 +170,6 @@
                 Thanks for the message! Looking forward to speaking to you soon.
             </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
     <section id="projects">
@@ -203,14 +204,14 @@
                         target="_blank"
                         class="project__description--link"
                       >
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-github click"></i>
                       </a>
                       <a
                         href="https://crawford124815.github.io/J-T-Lumber-Website/"
                         target="_blank"
                         class="project__description--link"
                       >
-                        <i class="fa-solid fa-link"></i>
+                        <i class="fa-solid fa-link click"></i>
                       </a>
                     </div>
                   </div>
@@ -242,14 +243,14 @@
                         target="_blank"
                         class="project__description--link"
                       >
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-github click"></i>
                       </a>
                       <a
                         href="https://crawford124815.github.io/Final-Project-M2/"
                         target="_blank"
                         class="project__description--link"
                       >
-                        <i class="fa-solid fa-link"></i>
+                        <i class="fa-solid fa-link click"></i>
                       </a>
                     </div>
                   </div>
@@ -280,14 +281,14 @@
                       target="_blank"
                       class="project__description--link"
                     >
-                      <i class="fa-brands fa-github"></i>
+                      <i class="fa-brands fa-github click"></i>
                     </a>
                     <a
                       href="https://crawford124815.github.io/E-Commerce-Movies/"
                       target="_blank"
                       class="project__description--link"
                     >
-                      <i class="fa-solid fa-link"></i>
+                      <i class="fa-solid fa-link click"></i>
                     </a>
                   </div>
                 </div>
@@ -318,14 +319,14 @@
                         target="_blank"
                         class="project__description--link"
                       >
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-github click"></i>
                       </a>
                       <a
                         href="https://crawford124815.github.io/E-Commerce/"
                         target="_blank"
                         class="project__description--link"
                       >
-                        <i class="fa-solid fa-link"></i>
+                        <i class="fa-solid fa-link click"></i>
                       </a>
                     </div>
                   </div>

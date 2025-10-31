@@ -9,7 +9,7 @@ function contact(event) {
       'service_57w3hqt',
       'template_qhpqmv3',
       event.target,
-      'user_stmOaXtqd6EQavKg3'
+      'stmOaXtqd6EQavKg3'
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
@@ -32,3 +32,5 @@ function toggleModal() {
     isModalOpen = true;
     document.body.classList += " modal--open"
 }
+
+const modalExit = document.get
