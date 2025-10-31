@@ -33,4 +33,4 @@ function toggleModal() {
     document.body.classList += " modal--open"
 }
 
-const modalExit = document.get
+

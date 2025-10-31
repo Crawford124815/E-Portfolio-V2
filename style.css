@@ -792,10 +792,27 @@ footer {
         align-items: center;
         justify-content: center;
     } 
-
+}
 @media (max-width: 592px) {
     .modal__language--img {
         width: 60%;
-    }
 }
+
+    .project__description {
+        left: 40px;
+        max-width: 340px;
+    }
+
+    .project__description--title {
+       font-size: 20px;
+    }
+
+    .project__description--sub-title {
+        font-size: 14;
+    }
+
+    .project__description--para {
+        margin: 4px;
+    }
+
 }
